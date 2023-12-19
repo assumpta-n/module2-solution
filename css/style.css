@@ -4,7 +4,7 @@
 }
 
 body {
-    padding: 20px;
+    padding: 10px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -42,6 +42,10 @@ h1 {
 
 }
 
+.menu-column {
+    padding: 0 10px;
+}
+
 .menu-column:nth-child(1) .menu-item {
     background-color: ivory;
 }
@@ -75,20 +79,26 @@ h1 {
 /*Media Queries*/
 /* For Tablets and other Medium Devices */
 @media ((min-width:768px) and (max-width:991px)) {
+
     .col-md-6 {
         width: 50%;
         float: left;
-        padding: 0 10px;
     }
 
     .col-md-12 {
         width: 100%;
         clear: left;
-        padding: 0 10px;
-
     }
 
     .menu-column:nth-child(3) .menu-title {
         width: 12.5%;
+    }
+}
+
+/* For laptops and other large devices */
+@media (min-width: 992px) {
+    .col-lg-4 {
+        width: 33.33%;
+        float: left;
     }
 }
