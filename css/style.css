@@ -22,7 +22,8 @@ h1 {
 
 .menu-content {
     padding: 0 20px;
-    font-weight: 100;
+    font-weight: lighter;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
 }
 
