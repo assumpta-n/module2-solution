@@ -1,26 +1,21 @@
+* {
+    box-sizing: border-box;
+
+}
+
 body {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
 }
 
 h1 {
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-
-}
-
-/*My Grid Styles*/
-.row {
-    width: 100%;
-}
-
-.col {
-    border: 1px solid;
 }
 
 .menu-item {
     margin-bottom: 20px;
+    border: 1px solid black;
 }
 
 .menu-item p {
@@ -47,27 +42,53 @@ h1 {
 
 }
 
-.menu-item:nth-child(1) {
+.menu-column:nth-child(1) .menu-item {
     background-color: ivory;
 }
 
-.menu-item:nth-child(2) {
+.menu-column:nth-child(2) .menu-item {
     background-color: azure;
 }
 
-.menu-item:nth-child(3) {
+.menu-column:nth-child(3) .menu-item {
     background-color: lavenderblush;
 }
 
-.menu-item:nth-child(1) .menu-title {
+.menu-column:nth-child(1) .menu-title {
     background-color: yellow;
 }
 
-.menu-item:nth-child(2) .menu-title {
+.menu-column:nth-child(2) .menu-title {
     background-color: aqua;
 }
 
-.menu-item:nth-child(3) .menu-title {
+.menu-column:nth-child(3) .menu-title {
     background-color: magenta;
-    color: white;
+}
+
+/* My grid styles */
+
+.row {
+    width: 100%;
+}
+
+/*Media Queries*/
+/* For Tablets and other Medium Devices */
+@media ((min-width:768px) and (max-width:991px)) {
+    .col-md-6 {
+        width: 50%;
+        float: left;
+        padding: 0 10px;
+    }
+
+    .col-md-12 {
+        width: 100%;
+        clear: left;
+        padding: 0 10px;
+
+    }
+
+    .menu-column:nth-child(3) .menu-title {
+        width: 12.5%;
+    }
 }
