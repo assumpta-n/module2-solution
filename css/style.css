@@ -18,13 +18,15 @@ body {
     border: 1px solid;
 }
 
-.menu-item {
-    position: relative;
-}
 
 .menu-content {
     padding: 0 20px;
 
+}
+
+.menu-header {
+    position: relative;
+    padding-bottom: 30px;
 }
 
 .menu-title {
@@ -32,8 +34,20 @@ body {
     right: 0;
     border: 1px solid black;
     margin: 0;
+    width: 25%;
+    min-width: 100px;
+    padding: 5px 10px;
+    text-align: center;
 }
 
-/* .col-sm-12 {
-    width: 100%;
-} */
+.menu-item:nth-child(1) .menu-title {
+    background-color: yellow;
+}
+
+.menu-item:nth-child(2) .menu-title {
+    background-color: aqua;
+}
+
+.menu-item:nth-child(3) .menu-title {
+    background-color: magenta;
+}
