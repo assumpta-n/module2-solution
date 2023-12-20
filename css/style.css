@@ -4,7 +4,6 @@
 }
 
 body {
-    padding: 10px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -43,10 +42,6 @@ h4.menu-title {
 
 }
 
-.menu-column {
-    padding: 0 10px;
-}
-
 .menu-column:nth-child(1) .menu-item {
     background-color: ivory;
 }
@@ -72,9 +67,17 @@ h4.menu-title {
 }
 
 /* My grid styles */
+.menu-column {
+    padding: 0 15px;
+}
 
 .row {
+    margin: 0 -15px;
+}
+
+.container {
     width: 100%;
+    padding: 0 15px;
 }
 
 /*Media Queries*/
